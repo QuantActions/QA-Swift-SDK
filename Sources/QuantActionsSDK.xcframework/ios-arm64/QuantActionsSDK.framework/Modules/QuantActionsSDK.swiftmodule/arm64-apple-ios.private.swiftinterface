@@ -291,6 +291,11 @@ extension Swift.Array where Element == QuantActionsSDK.DataPoint<QuantActionsSDK
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+extension QuantActionsSDK.QA {
+  public var defaultKeyboardLanguageName: Swift.String {
+    get
+  }
+}
 public struct QuantActionsKeyboardLanguagesView : SwiftUI.View {
   public let closeAction: () -> Swift.Void
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -354,6 +359,13 @@ public struct QA {
   public func pauseDataCollection()
   public func resumeDataCollection()
   public func numberOfRecordedApps(afterDate date: Foundation.Date) -> Swift.Int
+}
+extension FleksyKeyboardSDK.KeyboardLanguage : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: FleksyKeyboardSDK.KeyboardLanguage, rhs: FleksyKeyboardSDK.KeyboardLanguage) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct QAError {
   public let description: Swift.String

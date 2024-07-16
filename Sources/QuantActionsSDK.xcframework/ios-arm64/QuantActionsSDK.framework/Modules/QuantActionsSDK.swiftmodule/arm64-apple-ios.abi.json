@@ -1440,6 +1440,20 @@
       },
       {
         "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7819,6 +7833,13 @@
         "moduleName": "QuantActionsSDK"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "QA",
         "printedName": "QA",
@@ -9275,6 +9296,48 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "defaultKeyboardLanguageName",
+            "printedName": "defaultKeyboardLanguageName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK2QAV27defaultKeyboardLanguageNameSSvp",
+            "mangledName": "$s15QuantActionsSDK2QAV27defaultKeyboardLanguageNameSSvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK2QAV27defaultKeyboardLanguageNameSSvg",
+                "mangledName": "$s15QuantActionsSDK2QAV27defaultKeyboardLanguageNameSSvg",
+                "moduleName": "QuantActionsSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -9304,6 +9367,13 @@
         "kind": "Import",
         "name": "FleksyAppsCore",
         "printedName": "FleksyAppsCore",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "FleksyKeyboardSDK",
+        "printedName": "FleksyKeyboardSDK",
         "declKind": "Import",
         "moduleName": "QuantActionsSDK"
       },
@@ -9896,6 +9966,152 @@
         "printedName": "DeveloperToolsSupport",
         "declKind": "Import",
         "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeyboardLanguage",
+        "printedName": "KeyboardLanguage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E4hash4intoys6HasherVz_tF",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeyboardLanguage",
+                "printedName": "FleksyKeyboardSDK.KeyboardLanguage",
+                "usr": "s:17FleksyKeyboardSDK0B8LanguageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeyboardLanguage",
+                "printedName": "FleksyKeyboardSDK.KeyboardLanguage",
+                "usr": "s:17FleksyKeyboardSDK0B8LanguageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E2eeoiySbAC_ACtFZ",
+            "moduleName": "QuantActionsSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E9hashValueSivp",
+            "mangledName": "$s17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E9hashValueSivp",
+            "moduleName": "QuantActionsSDK",
+            "implicit": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E9hashValueSivg",
+                "mangledName": "$s17FleksyKeyboardSDK0B8LanguageV012QuantActionsC0E9hashValueSivg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17FleksyKeyboardSDK0B8LanguageV",
+        "mangledName": "$s17FleksyKeyboardSDK0B8LanguageV",
+        "moduleName": "FleksyKeyboardSDK",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -11422,49 +11638,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 1685,
+      "length": 38,
+      "value": "\"isDefaultKeyboardLanguageInitialized\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
       "length": 41,
       "value": "\"https:\/\/quantactions.com\/privacy-policy\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1947,
+      "offset": 2044,
       "length": 22,
       "value": "\"QUANTACTIONS_API_KEY\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1974,
+      "offset": 2071,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2205,
+      "offset": 2302,
       "length": 38,
       "value": "\"ae704835-5e12-4afc-a98c-a8b3db64e9ab\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2279,
+      "offset": 2376,
       "length": 34,
       "value": "\"8897ba52cd0389816822a92bb720ae3b\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "IntegerLiteral",
-      "offset": 2466,
+      "offset": 2563,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2661,
+      "offset": 2758,
       "length": 15,
       "value": "\"default.realm\""
     },
@@ -11597,212 +11820,247 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 923,
+      "offset": 547,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 986,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 957,
-      "length": 16,
-      "value": "\"androidVersion\""
+      "offset": 1020,
+      "length": 12,
+      "value": "\"iOSVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1008,
+      "offset": 1067,
       "length": 20,
       "value": "\"deviceManufacturer\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 1115,
       "length": 13,
       "value": "\"deviceModel\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1094,
+      "offset": 1153,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1190,
       "length": 12,
       "value": "\"apiVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1170,
+      "offset": 1229,
       "length": 12,
       "value": "\"deviceType\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1267,
       "length": 11,
       "value": "\"permAppId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1307,
       "length": 14,
       "value": "\"permDrawOver\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1291,
+      "offset": 1350,
       "length": 14,
       "value": "\"permLocation\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1333,
+      "offset": 1392,
       "length": 13,
       "value": "\"permContact\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1374,
+      "offset": 1433,
       "length": 5,
       "value": "\"age\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1402,
+      "offset": 1461,
       "length": 8,
       "value": "\"gender\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1505,
       "length": 21,
       "value": "\"selfDeclaredHealthy\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1499,
+      "offset": 1558,
       "length": 17,
       "value": "\"fireBaseTokenId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 923,
+      "offset": 1600,
+      "length": 17,
+      "value": "\"packageUsingSDK\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1648,
+      "length": 16,
+      "value": "\"androidVersion\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 986,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 957,
-      "length": 16,
-      "value": "\"androidVersion\""
+      "offset": 1020,
+      "length": 12,
+      "value": "\"iOSVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1008,
+      "offset": 1067,
       "length": 20,
       "value": "\"deviceManufacturer\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 1115,
       "length": 13,
       "value": "\"deviceModel\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1094,
+      "offset": 1153,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1190,
       "length": 12,
       "value": "\"apiVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1170,
+      "offset": 1229,
       "length": 12,
       "value": "\"deviceType\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1267,
       "length": 11,
       "value": "\"permAppId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1307,
       "length": 14,
       "value": "\"permDrawOver\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1291,
+      "offset": 1350,
       "length": 14,
       "value": "\"permLocation\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1333,
+      "offset": 1392,
       "length": 13,
       "value": "\"permContact\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1374,
+      "offset": 1433,
       "length": 5,
       "value": "\"age\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1402,
+      "offset": 1461,
       "length": 8,
       "value": "\"gender\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1505,
       "length": 21,
       "value": "\"selfDeclaredHealthy\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1499,
+      "offset": 1558,
       "length": 17,
       "value": "\"fireBaseTokenId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1600,
+      "length": 17,
+      "value": "\"packageUsingSDK\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/UpdateDeviceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1648,
+      "length": 16,
+      "value": "\"androidVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Models\/Statistics\/TypingDataItemDTO.swift",
@@ -12713,6 +12971,55 @@
       "offset": 912,
       "length": 8,
       "value": "\"rating\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 829,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 872,
+      "length": 7,
+      "value": "\"nl-NL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 915,
+      "length": 7,
+      "value": "\"de-DE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 7,
+      "value": "\"it-IT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1001,
+      "length": 7,
+      "value": "\"fr-FR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1044,
+      "length": 7,
+      "value": "\"fr-CA\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
+      "length": 7,
+      "value": "\"es-ES\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/LanguagesKeyboardApp.swift",
