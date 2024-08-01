@@ -8510,8 +8510,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15QuantActionsSDK2QAV17journalEventKindsSayAA07JournalF4KindVGyF",
-            "mangledName": "$s15QuantActionsSDK2QAV17journalEventKindsSayAA07JournalF4KindVGyF",
+            "usr": "s:15QuantActionsSDK2QAV17journalEventKindsSayAA07JournalF4KindVGyYaF",
+            "mangledName": "$s15QuantActionsSDK2QAV17journalEventKindsSayAA07JournalF4KindVGyYaF",
             "moduleName": "QuantActionsSDK",
             "declAttributes": [
               "RawDocComment"

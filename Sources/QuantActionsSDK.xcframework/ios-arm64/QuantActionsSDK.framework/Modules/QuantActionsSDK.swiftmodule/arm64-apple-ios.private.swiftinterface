@@ -16,7 +16,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension QuantActionsSDK.QA {
-  public func journalEventKinds() -> [QuantActionsSDK.JournalEventKind]
+  #if compiler(>=5.3) && $AsyncAwait
+  public func journalEventKinds() async -> [QuantActionsSDK.JournalEventKind]
+  #endif
   public func journalEntries() -> [QuantActionsSDK.JournalEntry]
   public func saveJournalEntry(journalEntry: QuantActionsSDK.JournalEntry) throws -> QuantActionsSDK.JournalEntry
   public func deleteJournalEntry(byID id: Swift.String) throws
