@@ -83,6 +83,9 @@ extension QuantActionsSDK.QA {
   public func socialTapsMetric(participationID: Swift.String, interval: Foundation.DateInterval) async throws -> [QuantActionsSDK.DataPoint<QuantActionsSDK.DoubleValueElement>]
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  public func behavioralAgeMetric(participationID: Swift.String, interval: Foundation.DateInterval) async throws -> [QuantActionsSDK.DataPoint<QuantActionsSDK.DoubleValueElement>]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func screenTimeAggregateMetric(participationID: Swift.String, interval: Foundation.DateInterval) async throws -> [QuantActionsSDK.DataPoint<QuantActionsSDK.ScreenTimeAggregateElement>]
   #endif
   #if compiler(>=5.3) && $AsyncAwait
@@ -208,7 +211,7 @@ public struct KeyboardSettings : Swift.Codable, Swift.Equatable {
   public var spacebarMovesCursor: Swift.Bool
   public var hapticFeedback: Swift.Bool
   public var soundFeedback: Swift.Bool
-  public init(caseSensitive: Swift.Bool = true, smartPunctuation: Swift.Bool = true, autoCorrect: Swift.Bool = true, autoCapitalization: Swift.Bool = true, autoLearn: Swift.Bool = true, doubleSpaceTapAddsPunctuation: Swift.Bool = true, swipeTyping: Swift.Bool = true, swipeLeftToDelete: Swift.Bool = false, autoCorrectAfterPunctuation: Swift.Bool = true, spacebarMovesCursor: Swift.Bool = true, hapticFeedback: Swift.Bool = true, soundFeedback: Swift.Bool = false)
+  public init(caseSensitive: Swift.Bool = true, smartPunctuation: Swift.Bool = false, autoCorrect: Swift.Bool = true, autoCapitalization: Swift.Bool = true, autoLearn: Swift.Bool = true, doubleSpaceTapAddsPunctuation: Swift.Bool = true, swipeTyping: Swift.Bool = true, swipeLeftToDelete: Swift.Bool = false, autoCorrectAfterPunctuation: Swift.Bool = true, spacebarMovesCursor: Swift.Bool = true, hapticFeedback: Swift.Bool = false, soundFeedback: Swift.Bool = false)
   public static func == (a: QuantActionsSDK.KeyboardSettings, b: QuantActionsSDK.KeyboardSettings) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -283,6 +286,9 @@ extension Swift.Array where Element == QuantActionsSDK.DataPoint<QuantActionsSDK
   @_Concurrency.MainActor(unsafe) @objc override open var appIcon: UIKit.UIImage? {
     @objc get
   }
+  @_Concurrency.MainActor(unsafe) open var style: FleksyKeyboardSDK.StyleConfiguration {
+    get
+  }
   @_Concurrency.MainActor(unsafe) override public func createConfiguration() -> FleksyKeyboardSDK.KeyboardConfiguration
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
@@ -317,6 +323,9 @@ public struct Subscription : Swift.Identifiable {
 }
 public struct QA {
   public static let shared: QuantActionsSDK.QA
+  public var shouldUseCustomBackground: Swift.Bool {
+    get
+  }
   public var isDeviceRegistered: Swift.Bool {
     get
   }
@@ -358,6 +367,7 @@ public struct QA {
   #if compiler(>=5.3) && $AsyncAwait
   public func sendNote(text: Swift.String) async throws
   #endif
+  public func updateShouldUseCustomBackground(newValue: Swift.Bool)
   public func pauseDataCollection()
   public func resumeDataCollection()
   public func numberOfRecordedApps(afterDate date: Foundation.Date) -> Swift.Int
