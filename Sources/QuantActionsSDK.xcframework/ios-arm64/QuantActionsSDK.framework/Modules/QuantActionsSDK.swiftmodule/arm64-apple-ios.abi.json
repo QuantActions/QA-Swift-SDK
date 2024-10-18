@@ -13248,14 +13248,84 @@
       "kind": "StringLiteral",
       "offset": 1271,
       "length": 7,
-      "value": "\"da-DK\""
+      "value": "\"ms-MY\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
       "kind": "Array",
       "offset": 1281,
-      "length": 19,
-      "value": "[\"QWERTY (Danish)\"]"
+      "length": 10,
+      "value": "[\"QWERTY\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1328,
+      "length": 7,
+      "value": "\"ja-JP\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1338,
+      "length": 16,
+      "value": "[\"Flick (kana)\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1391,
+      "length": 7,
+      "value": "\"id-ID\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1401,
+      "length": 10,
+      "value": "[\"QWERTY\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 7,
+      "value": "\"jv-ID\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1458,
+      "length": 10,
+      "value": "[\"QWERTY\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1505,
+      "length": 7,
+      "value": "\"tl-PH\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1515,
+      "length": 10,
+      "value": "[\"QWERTY\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1562,
+      "length": 7,
+      "value": "\"tr-TR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1572,
+      "length": 20,
+      "value": "[\"QWERTY (Turkish)\"]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/LanguagesKeyboardApp.swift",
