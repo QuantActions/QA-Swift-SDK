@@ -203,13 +203,14 @@ public struct KeyboardSettings : Swift.Codable, Swift.Equatable {
   public var autoCapitalization: Swift.Bool
   public var autoLearn: Swift.Bool
   public var doubleSpaceTapAddsPunctuation: Swift.Bool
+  public var backspaceToUndoAutoCorrection: Swift.Bool
   public var swipeTyping: Swift.Bool
   public var swipeLeftToDelete: Swift.Bool
   public var autoCorrectAfterPunctuation: Swift.Bool
   public var spacebarMovesCursor: Swift.Bool
   public var hapticFeedback: Swift.Bool
   public var soundFeedback: Swift.Bool
-  public init(caseSensitive: Swift.Bool = true, smartPunctuation: Swift.Bool = false, autoCorrect: Swift.Bool = true, autoCapitalization: Swift.Bool = true, autoLearn: Swift.Bool = true, doubleSpaceTapAddsPunctuation: Swift.Bool = true, swipeTyping: Swift.Bool = true, swipeLeftToDelete: Swift.Bool = false, autoCorrectAfterPunctuation: Swift.Bool = true, spacebarMovesCursor: Swift.Bool = true, hapticFeedback: Swift.Bool = false, soundFeedback: Swift.Bool = false)
+  public init(caseSensitive: Swift.Bool = true, smartPunctuation: Swift.Bool = false, autoCorrect: Swift.Bool = true, autoCapitalization: Swift.Bool = true, autoLearn: Swift.Bool = true, doubleSpaceTapAddsPunctuation: Swift.Bool = true, backspaceToUndoAutoCorrection: Swift.Bool = false, swipeTyping: Swift.Bool = true, swipeLeftToDelete: Swift.Bool = false, autoCorrectAfterPunctuation: Swift.Bool = true, spacebarMovesCursor: Swift.Bool = true, hapticFeedback: Swift.Bool = false, soundFeedback: Swift.Bool = false)
   public static func == (a: QuantActionsSDK.KeyboardSettings, b: QuantActionsSDK.KeyboardSettings) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -333,6 +334,9 @@ public struct QA {
   public var isDataCollectionRunning: Swift.Bool {
     get
   }
+  public var isDeviceMotionDataCollectionRunning: Swift.Bool {
+    get
+  }
   public var isKeyboardAdded: Swift.Bool? {
     get
   }
@@ -368,6 +372,8 @@ public struct QA {
   public func updateShouldUseCustomBackground(newValue: Swift.Bool)
   public func pauseDataCollection()
   public func resumeDataCollection()
+  public func pauseDeviceMotionDataCollection()
+  public func resumeDeviceMotionDataCollection()
   public func numberOfRecordedApps(afterDate date: Foundation.Date) -> Swift.Int
 }
 extension FleksyKeyboardSDK.KeyboardLanguage : Swift.Hashable {

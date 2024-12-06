@@ -5259,6 +5259,92 @@
           },
           {
             "kind": "Var",
+            "name": "backspaceToUndoAutoCorrection",
+            "printedName": "backspaceToUndoAutoCorrection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvp",
+            "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvg",
+                "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvs",
+                "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvs",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvM",
+                "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV29backspaceToUndoAutoCorrectionSbvM",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "swipeTyping",
             "printedName": "swipeTyping",
             "children": [
@@ -5776,7 +5862,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(caseSensitive:smartPunctuation:autoCorrect:autoCapitalization:autoLearn:doubleSpaceTapAddsPunctuation:swipeTyping:swipeLeftToDelete:autoCorrectAfterPunctuation:spacebarMovesCursor:hapticFeedback:soundFeedback:)",
+            "printedName": "init(caseSensitive:smartPunctuation:autoCorrect:autoCapitalization:autoLearn:doubleSpaceTapAddsPunctuation:backspaceToUndoAutoCorrection:swipeTyping:swipeLeftToDelete:autoCorrectAfterPunctuation:spacebarMovesCursor:hapticFeedback:soundFeedback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5867,11 +5953,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15QuantActionsSDK16KeyboardSettingsV13caseSensitive16smartPunctuation11autoCorrect0J14Capitalization0J5Learn018doubleSpaceTapAddsI011swipeTyping0R12LeftToDelete0jk5AfterI019spacebarMovesCursor14hapticFeedback13soundFeedbackACSb_S11btcfc",
-            "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV13caseSensitive16smartPunctuation11autoCorrect0J14Capitalization0J5Learn018doubleSpaceTapAddsI011swipeTyping0R12LeftToDelete0jk5AfterI019spacebarMovesCursor14hapticFeedback13soundFeedbackACSb_S11btcfc",
+            "usr": "s:15QuantActionsSDK16KeyboardSettingsV13caseSensitive16smartPunctuation11autoCorrect0J14Capitalization0J5Learn018doubleSpaceTapAddsI029backspaceToUndoAutoCorrection11swipeTyping0w4LeftS6Delete0jk5AfterI019spacebarMovesCursor14hapticFeedback13soundFeedbackACSb_S12btcfc",
+            "mangledName": "$s15QuantActionsSDK16KeyboardSettingsV13caseSensitive16smartPunctuation11autoCorrect0J14Capitalization0J5Learn018doubleSpaceTapAddsI029backspaceToUndoAutoCorrection11swipeTyping0w4LeftS6Delete0jk5AfterI019spacebarMovesCursor14hapticFeedback13soundFeedbackACSb_S12btcfc",
             "moduleName": "QuantActionsSDK",
             "declAttributes": [
               "AccessControl"
@@ -8100,6 +8193,47 @@
           },
           {
             "kind": "Var",
+            "name": "isDeviceMotionDataCollectionRunning",
+            "printedName": "isDeviceMotionDataCollectionRunning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK2QAV35isDeviceMotionDataCollectionRunningSbvp",
+            "mangledName": "$s15QuantActionsSDK2QAV35isDeviceMotionDataCollectionRunningSbvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK2QAV35isDeviceMotionDataCollectionRunningSbvg",
+                "mangledName": "$s15QuantActionsSDK2QAV35isDeviceMotionDataCollectionRunningSbvg",
+                "moduleName": "QuantActionsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isKeyboardAdded",
             "printedName": "isKeyboardAdded",
             "children": [
@@ -8565,6 +8699,48 @@
             "declKind": "Func",
             "usr": "s:15QuantActionsSDK2QAV20resumeDataCollectionyyF",
             "mangledName": "$s15QuantActionsSDK2QAV20resumeDataCollectionyyF",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseDeviceMotionDataCollection",
+            "printedName": "pauseDeviceMotionDataCollection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15QuantActionsSDK2QAV31pauseDeviceMotionDataCollectionyyF",
+            "mangledName": "$s15QuantActionsSDK2QAV31pauseDeviceMotionDataCollectionyyF",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeDeviceMotionDataCollection",
+            "printedName": "resumeDeviceMotionDataCollection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15QuantActionsSDK2QAV32resumeDeviceMotionDataCollectionyyF",
+            "mangledName": "$s15QuantActionsSDK2QAV32resumeDeviceMotionDataCollectionyyF",
             "moduleName": "QuantActionsSDK",
             "declAttributes": [
               "AccessControl",
@@ -11769,91 +11945,98 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1417,
+      "offset": 1437,
+      "length": 38,
+      "value": "\"isDeviceMotionDataCollectionDisabled\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 1514,
       "length": 18,
       "value": "\"keyboardSettings\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1470,
+      "offset": 1567,
       "length": 14,
       "value": "\"recordedApps\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1623,
       "length": 21,
       "value": "\"activeSubscriptions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1694,
       "length": 29,
       "value": "\"firebaseCloudMessagingToken\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1685,
+      "offset": 1782,
       "length": 38,
       "value": "\"isDefaultKeyboardLanguageInitialized\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1868,
       "length": 27,
       "value": "\"shouldUseCustomBackground\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2078,
       "length": 41,
       "value": "\"https:\/\/quantactions.com\/privacy-policy\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2119,
+      "offset": 2216,
       "length": 22,
       "value": "\"QUANTACTIONS_API_KEY\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2146,
+      "offset": 2243,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2377,
+      "offset": 2474,
       "length": 38,
       "value": "\"ae704835-5e12-4afc-a98c-a8b3db64e9ab\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2451,
+      "offset": 2548,
       "length": 34,
       "value": "\"8897ba52cd0389816822a92bb720ae3b\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "IntegerLiteral",
-      "offset": 2638,
+      "offset": 2735,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Config\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2833,
+      "offset": 2930,
       "length": 15,
       "value": "\"default.realm\""
     },
@@ -12924,84 +13107,91 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1463,
+      "offset": 1618,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1502,
+      "offset": 1657,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1537,
+      "offset": 1692,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1578,
+      "offset": 1733,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1610,
+      "offset": 1765,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1662,
+      "offset": 1817,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1696,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1736,
+      "offset": 1869,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1787,
+      "offset": 1904,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1829,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1866,
+      "offset": 1944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1903,
+      "offset": 1995,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2037,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2074,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/KeyboardSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2111,
       "length": 5,
       "value": "false"
     },
@@ -13326,6 +13516,20 @@
       "offset": 1572,
       "length": 20,
       "value": "[\"QWERTY (Turkish)\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "StringLiteral",
+      "offset": 1629,
+      "length": 7,
+      "value": "\"pt-PT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/Languages\/LanguagesView.swift",
+      "kind": "Array",
+      "offset": 1639,
+      "length": 23,
+      "value": "[\"QWERTY (Portuguese)\"]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Keyboard\/LanguagesKeyboardApp\/LanguagesKeyboardApp.swift",
