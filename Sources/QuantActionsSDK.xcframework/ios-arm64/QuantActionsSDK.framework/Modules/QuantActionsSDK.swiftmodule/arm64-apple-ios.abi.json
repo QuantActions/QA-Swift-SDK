@@ -74,6 +74,13 @@
         "moduleName": "QuantActionsSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ScreenTimeAggregateElement",
         "printedName": "ScreenTimeAggregateElement",
@@ -1001,6 +1008,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -2422,6 +2439,62 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "definition",
+            "printedName": "definition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuantActionsSDK.QuestionnaireDefinition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuestionnaireDefinition",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK13QuestionnaireV10definitionAA0D10DefinitionVSgvp",
+            "mangledName": "$s15QuantActionsSDK13QuestionnaireV10definitionAA0D10DefinitionVSgvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionnaireDefinition",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK13QuestionnaireV10definitionAA0D10DefinitionVSgvg",
+                "mangledName": "$s15QuantActionsSDK13QuestionnaireV10definitionAA0D10DefinitionVSgvg",
+                "moduleName": "QuantActionsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -2495,6 +2568,1390 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QuestionnaireDefinition",
+        "printedName": "QuestionnaireDefinition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV4codeSSvp",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV4codeSSvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV4codeSSvg",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV4codeSSvg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV5titleSSvp",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV5titleSSvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV5titleSSvg",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV5titleSSvg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sections",
+            "printedName": "sections",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuantActionsSDK.QuestionnaireDefinition.Section]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Section",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Section",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8sectionsSayAC7SectionVGvp",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8sectionsSayAC7SectionVGvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuantActionsSDK.QuestionnaireDefinition.Section]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Section",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.Section",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8sectionsSayAC7SectionVGvg",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8sectionsSayAC7SectionVGvg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Section",
+            "printedName": "Section",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4codeSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4codeSSvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4codeSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4codeSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "title",
+                "printedName": "title",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV5titleSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV5titleSSvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV5titleSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV5titleSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "questions",
+                "printedName": "questions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuantActionsSDK.QuestionnaireDefinition.Question]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Question",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.Question",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9questionsSayAC8QuestionVGvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9questionsSayAC8QuestionVGvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuantActionsSDK.QuestionnaireDefinition.Question]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Question",
+                            "printedName": "QuantActionsSDK.QuestionnaireDefinition.Question",
+                            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9questionsSayAC8QuestionVGvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9questionsSayAC8QuestionVGvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV11descriptionSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV11descriptionSSvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV11descriptionSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV11descriptionSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Section",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Section",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Section",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Section",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Section",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Section",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV2eeoiySbAE_AEtFZ",
+                "moduleName": "QuantActionsSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Question",
+            "printedName": "Question",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4codeSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4codeSSvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4codeSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4codeSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuestionType",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4typeAC0F4TypeOvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4typeAC0F4TypeOvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionType",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4typeAC0F4TypeOvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4typeAC0F4TypeOvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lowVal",
+                "printedName": "lowVal",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6lowValSiSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6lowValSiSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6lowValSiSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6lowValSiSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "highVal",
+                "printedName": "highVal",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7highValSiSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7highValSiSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7highValSiSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7highValSiSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "nSteps",
+                "printedName": "nSteps",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6nStepsSiSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6nStepsSiSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6nStepsSiSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV6nStepsSiSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lowLabel",
+                "printedName": "lowLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8lowLabelSSSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8lowLabelSSSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8lowLabelSSSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8lowLabelSSSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "highLabel",
+                "printedName": "highLabel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9highLabelSSSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9highLabelSSSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9highLabelSSSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9highLabelSSSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "question",
+                "printedName": "question",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8questionSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8questionSSvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8questionSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV8questionSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "choices",
+                "printedName": "choices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7choicesSaySSGSgvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7choicesSaySSGSgvp",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7choicesSaySSGSgvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV7choicesSaySSGSgvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Question",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Question",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Question",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Question",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Question",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.Question",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV2eeoiySbAE_AEtFZ",
+                "moduleName": "QuantActionsSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "QuestionType",
+            "printedName": "QuestionType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "discreteSelection",
+                "printedName": "discreteSelection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type) -> QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionType",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QuestionType",
+                            "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO17discreteSelectionyA2EmF",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO17discreteSelectionyA2EmF",
+                "moduleName": "QuantActionsSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "multipleChoice",
+                "printedName": "multipleChoice",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type) -> QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionType",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QuestionType",
+                            "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO14multipleChoiceyA2EmF",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO14multipleChoiceyA2EmF",
+                "moduleName": "QuantActionsSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type) -> QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionType",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "QuestionType",
+                            "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO7unknownyA2EmF",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO7unknownyA2EmF",
+                "moduleName": "QuantActionsSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuestionType",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "QuantActionsSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QuestionType",
+                        "printedName": "QuantActionsSDK.QuestionnaireDefinition.QuestionType",
+                        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueAESgSS_tcfc",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueSSvp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueSSvp",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueSSvg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO8rawValueSSvg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV12QuestionTypeO",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QuestionnaireDefinition",
+                "printedName": "QuantActionsSDK.QuestionnaireDefinition",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QuantActionsSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuestionnaireDefinition",
+                "printedName": "QuantActionsSDK.QuestionnaireDefinition",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuestionnaireDefinition",
+                "printedName": "QuantActionsSDK.QuestionnaireDefinition",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV2eeoiySbAC_ACtFZ",
+            "moduleName": "QuantActionsSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV",
+        "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV",
+        "moduleName": "QuantActionsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -3464,6 +4921,13 @@
         "declAttributes": [
           "ImplementationOnly"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
       },
       {
         "kind": "Import",
@@ -7415,6 +8879,23 @@
       },
       {
         "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8341,6 +9822,63 @@
                 "declKind": "Accessor",
                 "usr": "s:15QuantActionsSDK2QAV13subscriptionsSayAA12SubscriptionVGvg",
                 "mangledName": "$s15QuantActionsSDK2QAV13subscriptionsSayAA12SubscriptionVGvg",
+                "moduleName": "QuantActionsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subscriptionsWithQuestionnaires",
+            "printedName": "subscriptionsWithQuestionnaires",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuantActionsSDK.SubscriptionWithQuestionnaires]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SubscriptionWithQuestionnaires",
+                    "printedName": "QuantActionsSDK.SubscriptionWithQuestionnaires",
+                    "usr": "s:15QuantActionsSDK30SubscriptionWithQuestionnairesV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK2QAV31subscriptionsWithQuestionnairesSayAA012SubscriptionfG0VGvp",
+            "mangledName": "$s15QuantActionsSDK2QAV31subscriptionsWithQuestionnairesSayAA012SubscriptionfG0VGvp",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuantActionsSDK.SubscriptionWithQuestionnaires]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SubscriptionWithQuestionnaires",
+                        "printedName": "QuantActionsSDK.SubscriptionWithQuestionnaires",
+                        "usr": "s:15QuantActionsSDK30SubscriptionWithQuestionnairesV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK2QAV31subscriptionsWithQuestionnairesSayAA012SubscriptionfG0VGvg",
+                "mangledName": "$s15QuantActionsSDK2QAV31subscriptionsWithQuestionnairesSayAA012SubscriptionfG0VGvg",
                 "moduleName": "QuantActionsSDK",
                 "accessorKind": "get"
               }
@@ -9673,6 +11211,60 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "submitQuestionnaireAnswers",
+            "printedName": "submitQuestionnaireAnswers(studyId:questionnaireDefinitionCode:answers:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15QuantActionsSDK2QAV26submitQuestionnaireAnswers7studyId27questionnaireDefinitionCode7answersySS_SSSDySSSiGtYaKF",
+            "mangledName": "$s15QuantActionsSDK2QAV26submitQuestionnaireAnswers7studyId27questionnaireDefinitionCode7answersySS_SSSDySSSiGtYaKF",
+            "moduleName": "QuantActionsSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -9711,6 +11303,23 @@
         "printedName": "FleksyKeyboardSDK",
         "declKind": "Import",
         "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RealmSwift",
+        "printedName": "RealmSwift",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -12986,6 +14595,34 @@
       "value": "\"003-003-004-001\""
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 4,
+      "value": "\"DS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 4,
+      "value": "\"MC\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 4,
+      "value": "\"DS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 4,
+      "value": "\"MC\""
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/Storage\/Models\/JournalEventDBO.swift",
       "kind": "BooleanLiteral",
       "offset": 150,
@@ -13355,6 +14992,13 @@
       "offset": 459,
       "length": 2,
       "value": "60"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/Storage\/Models\/QuestionnaireAnswersDBO.swift",
+      "kind": "BooleanLiteral",
+      "offset": 154,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Data\/API\/Requests\/JournalEntryUpdateRequest.swift",
