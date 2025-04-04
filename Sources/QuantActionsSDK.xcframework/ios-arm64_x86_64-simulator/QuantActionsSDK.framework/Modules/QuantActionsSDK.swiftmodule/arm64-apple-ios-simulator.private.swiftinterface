@@ -126,19 +126,23 @@ public struct Questionnaire : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct QuestionnaireDefinition : Swift.Decodable, Swift.Equatable {
+public struct QuestionnaireDefinition : Swift.Decodable, Swift.Hashable {
   public let code: Swift.String
   public let title: Swift.String
   public let sections: [QuantActionsSDK.QuestionnaireDefinition.Section]
-  public struct Section : Swift.Decodable, Swift.Equatable {
+  public struct Section : Swift.Decodable, Swift.Hashable {
     public let code: Swift.String
     public let title: Swift.String
     public let questions: [QuantActionsSDK.QuestionnaireDefinition.Question]
     public let description: Swift.String
+    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: QuantActionsSDK.QuestionnaireDefinition.Section, b: QuantActionsSDK.QuestionnaireDefinition.Section) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
     public init(from decoder: any Swift.Decoder) throws
   }
-  public struct Question : Swift.Decodable, Swift.Equatable {
+  public struct Question : Swift.Decodable, Swift.Hashable {
     public let code: Swift.String
     public let type: QuantActionsSDK.QuestionnaireDefinition.QuestionType
     public let lowVal: Swift.Int?
@@ -148,10 +152,14 @@ public struct QuestionnaireDefinition : Swift.Decodable, Swift.Equatable {
     public let highLabel: Swift.String?
     public let question: Swift.String
     public let choices: [Swift.String]?
+    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: QuantActionsSDK.QuestionnaireDefinition.Question, b: QuantActionsSDK.QuestionnaireDefinition.Question) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
     public init(from decoder: any Swift.Decoder) throws
   }
-  public enum QuestionType : Swift.String, Swift.Decodable, Swift.Equatable {
+  public enum QuestionType : Swift.String, Swift.Decodable, Swift.Hashable {
     case discreteSelection
     case multipleChoice
     case unknown
@@ -162,7 +170,11 @@ public struct QuestionnaireDefinition : Swift.Decodable, Swift.Equatable {
       get
     }
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: QuantActionsSDK.QuestionnaireDefinition, b: QuantActionsSDK.QuestionnaireDefinition) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
 extension QuantActionsSDK.QA {
@@ -450,7 +462,6 @@ public struct DoubleValueElement : QuantActionsSDK.DataPointElement {
   public let confidenceIntervalLow: Swift.Double?
   public let confidenceIntervalHigh: Swift.Double?
 }
-extension QuantActionsSDK.QuestionnaireDefinition.QuestionType : Swift.Hashable {}
 extension QuantActionsSDK.QuestionnaireDefinition.QuestionType : Swift.RawRepresentable {}
 extension QuantActionsSDK.TrendKind : Swift.Equatable {}
 extension QuantActionsSDK.TrendKind : Swift.Hashable {}

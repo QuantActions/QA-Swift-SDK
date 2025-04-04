@@ -2948,6 +2948,70 @@
                 "init_kind": "Designated"
               },
               {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9hashValueSivp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9hashValueSivp",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9hashValueSivg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV9hashValueSivg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4hash4intoys6HasherVz_tF",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV7SectionV4hash4intoys6HasherVz_tF",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -2994,6 +3058,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               },
               {
                 "kind": "Conformance",
@@ -3544,6 +3615,70 @@
                 "init_kind": "Designated"
               },
               {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9hashValueSivp",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9hashValueSivp",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9hashValueSivg",
+                    "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV9hashValueSivg",
+                    "moduleName": "QuantActionsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4hash4intoys6HasherVz_tF",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV8QuestionV4hash4intoys6HasherVz_tF",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -3590,6 +3725,13 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               },
               {
                 "kind": "Conformance",
@@ -3828,10 +3970,10 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -3864,10 +4006,10 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
               }
             ]
           },
@@ -3896,6 +4038,70 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV9hashValueSivp",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV9hashValueSivp",
+            "moduleName": "QuantActionsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV9hashValueSivg",
+                "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV9hashValueSivg",
+                "moduleName": "QuantActionsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15QuantActionsSDK23QuestionnaireDefinitionV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15QuantActionsSDK23QuestionnaireDefinitionV4hash4intoys6HasherVz_tF",
+            "moduleName": "QuantActionsSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3945,6 +4151,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -14597,28 +14810,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
       "kind": "StringLiteral",
-      "offset": 2936,
+      "offset": 2932,
       "length": 4,
       "value": "\"DS\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 2967,
       "length": 4,
       "value": "\"MC\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
       "kind": "StringLiteral",
-      "offset": 2936,
+      "offset": 2932,
       "length": 4,
       "value": "\"DS\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QuantActionsSDK\/Domain\/Model\/SubscriptionWithQuestionnaires.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 2967,
       "length": 4,
       "value": "\"MC\""
     },
