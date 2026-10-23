@@ -6,8 +6,12 @@ The QuantActions SDK for iOS allows developers to add all the QuantActions funct
 * Enabling device communication
 * Subscribe to different cohorts
 
+## Requirements
+* iOS 17 or later
+* Xcode 27 or later
+
 ## Installation
-QASwiftSDK can be installed with the Swift Package Manager:
+QASwiftSDK can be installed with the Swift Package Manager. It brings [KeyboardKit](https://github.com/KeyboardKit/KeyboardKit) as its dependency:
 ```
 https://github.com/QuantActions/QA-Swift-SDK
 ```

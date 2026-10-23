@@ -1,11 +1,11 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 5.9
 
 import PackageDescription
 
 let package = Package(
     name: "QASwiftSDK",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v17)
     ],
     products: [
         .library(
@@ -14,16 +14,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/FleksySDK/FleksySDK-iOS", exact: "4.30.0"),
-        .package(url: "https://github.com/realm/realm-swift.git", exact: "10.42.1"),
+        .package(url: "https://github.com/KeyboardKit/KeyboardKit.git", exact: "10.9.4"),
     ],
     targets: [
         .target(
             name: "QASwiftSDK",
             dependencies: [
-                .product(name: "FleksySDK", package: "FleksySDK-iOS"),
-                .product(name: "Realm", package: "realm-swift"),
-                .product(name: "RealmSwift", package: "realm-swift"),
+                .product(name: "KeyboardKit", package: "KeyboardKit"),
                 "QuantActionsSDK"
             ]
         ),
