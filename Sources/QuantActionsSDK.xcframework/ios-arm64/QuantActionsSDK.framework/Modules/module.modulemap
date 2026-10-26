@@ -7,5 +7,4 @@ framework module QuantActionsSDK {
 
 module QuantActionsSDK.Swift {
   header "QuantActionsSDK-Swift.h"
-  requires objc
 }
