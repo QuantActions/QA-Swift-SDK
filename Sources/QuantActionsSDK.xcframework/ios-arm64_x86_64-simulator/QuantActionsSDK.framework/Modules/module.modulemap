@@ -4,7 +4,3 @@ framework module QuantActionsSDK {
 
   module * { export * }
 }
-
-module QuantActionsSDK.Swift {
-  header "QuantActionsSDK-Swift.h"
-}

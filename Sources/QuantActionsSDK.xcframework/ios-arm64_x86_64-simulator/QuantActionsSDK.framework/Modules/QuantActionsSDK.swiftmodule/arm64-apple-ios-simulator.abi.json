@@ -12639,6 +12639,17 @@
       },
       {
         "kind": "Import",
+        "name": "KeyboardKitHostPlugin",
+        "printedName": "KeyboardKitHostPlugin",
+        "declKind": "Import",
+        "moduleName": "QuantActionsSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -12981,13 +12992,6 @@
             "printedName": "KeyboardController",
             "usr": "s:11KeyboardKit0A10ControllerP",
             "mangledName": "$s11KeyboardKit0A10ControllerP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KeyboardHostApplicationProvider",
-            "printedName": "KeyboardHostApplicationProvider",
-            "usr": "s:11KeyboardKit0A23HostApplicationProviderP",
-            "mangledName": "$s11KeyboardKit0A23HostApplicationProviderP"
           },
           {
             "kind": "Conformance",
