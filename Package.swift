@@ -14,7 +14,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/KeyboardKit/KeyboardKit.git", exact: "10.9.4"),
+        .package(url: "https://github.com/KeyboardKit/KeyboardKit.git", exact: "11.1.6"),
     ],
     targets: [
         .target(
